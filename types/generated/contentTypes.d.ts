@@ -639,6 +639,209 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiNaturalgodocsHealthyBrainNaturalgodocsHealthyBrain
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_healthy_brains';
+  info: {
+    singularName: 'naturalgodocs-healthy-brain';
+    pluralName: 'naturalgodocs-healthy-brains';
+    displayName: 'naturalgodocs_healthy_brain';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-healthy-brain.naturalgodocs-healthy-brain'
+    >;
+  };
+}
+
+export interface ApiNaturalgodocsNutritionalFactNaturalgodocsNutritionalFact
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_nutritional_facts';
+  info: {
+    singularName: 'naturalgodocs-nutritional-fact';
+    pluralName: 'naturalgodocs-nutritional-facts';
+    displayName: 'naturalgodocs_nutritional_fact';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-nutritional-fact.naturalgodocs-nutritional-fact'
+    >;
+  };
+}
+
+export interface ApiNaturalgodocsOmega3NaturalgodocsOmega3
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_omega3s';
+  info: {
+    singularName: 'naturalgodocs-omega3';
+    pluralName: 'naturalgodocs-omega3s';
+    displayName: 'naturalgodocs_omega3';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-omega3.naturalgodocs-omega3'
+    >;
+  };
+}
+
+export interface ApiNaturalgodocsPackagingNaturalgodocsPackaging
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_packagings';
+  info: {
+    singularName: 'naturalgodocs-packaging';
+    pluralName: 'naturalgodocs-packagings';
+    displayName: 'naturalgodocs_packaging';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-packaging.naturalgodocs-packaging'
+    >;
+  };
+}
+
+export interface ApiNaturalgodocsProductDescriptionNaturalgodocsProductDescription
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_product_descriptions';
+  info: {
+    singularName: 'naturalgodocs-product-description';
+    pluralName: 'naturalgodocs-product-descriptions';
+    displayName: 'naturalgodocs_product_description';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-product-description.naturalgodocs-product-description'
+    >;
+  };
+}
+
+export interface ApiNaturalgodocsShippingNaturalgodocsShipping
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_shippings';
+  info: {
+    singularName: 'naturalgodocs-shipping';
+    pluralName: 'naturalgodocs-shippings';
+    displayName: 'naturalgodocs_shipping';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-shipping.naturalgodocs-shipping'
+    >;
+  };
+}
+
+export interface ApiNaturalgodocsSocialListingNaturalgodocsSocialListing
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'naturalgodocs_social_listings';
+  info: {
+    singularName: 'naturalgodocs-social-listing';
+    pluralName: 'naturalgodocs-social-listings';
+    displayName: 'naturalgodocs_social_listing';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    createdAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    publishedAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::naturalgodocs-social-listing.naturalgodocs-social-listing'
+    >;
+  };
+}
+
 export interface ApiNewsDailyNewsDaily extends Struct.CollectionTypeSchema {
   collectionName: 'news_dailies';
   info: {
@@ -1074,6 +1277,13 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
+      'api::naturalgodocs-healthy-brain.naturalgodocs-healthy-brain': ApiNaturalgodocsHealthyBrainNaturalgodocsHealthyBrain;
+      'api::naturalgodocs-nutritional-fact.naturalgodocs-nutritional-fact': ApiNaturalgodocsNutritionalFactNaturalgodocsNutritionalFact;
+      'api::naturalgodocs-omega3.naturalgodocs-omega3': ApiNaturalgodocsOmega3NaturalgodocsOmega3;
+      'api::naturalgodocs-packaging.naturalgodocs-packaging': ApiNaturalgodocsPackagingNaturalgodocsPackaging;
+      'api::naturalgodocs-product-description.naturalgodocs-product-description': ApiNaturalgodocsProductDescriptionNaturalgodocsProductDescription;
+      'api::naturalgodocs-shipping.naturalgodocs-shipping': ApiNaturalgodocsShippingNaturalgodocsShipping;
+      'api::naturalgodocs-social-listing.naturalgodocs-social-listing': ApiNaturalgodocsSocialListingNaturalgodocsSocialListing;
       'api::news-daily.news-daily': ApiNewsDailyNewsDaily;
       'admin::permission': AdminPermission;
       'admin::user': AdminUser;
